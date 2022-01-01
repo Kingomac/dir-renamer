@@ -23,7 +23,7 @@ fn main() {
     };
 
     let ignore_extensions = match args.get("ignore-extensions") {
-        Some(x) => x.eq("true"),
+        Some(_x) => true,
         None => false,
     };
 

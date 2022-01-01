@@ -7,6 +7,7 @@ pub fn parse_args() -> HashMap<String, String> {
     for i in args() {
         if i.starts_with("-") {
             index = index_tweak(&i);
+            toret.insert(index.clone(), String::from(""));
         } else {
             toret.insert(index.clone(), i);
         }
